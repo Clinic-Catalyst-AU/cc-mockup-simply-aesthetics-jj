@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Simply Aesthetics JJ - Cosmetic Nurse Mornington | Juls Johnson</title>
+<meta name="description" content="Subtle, natural cosmetic injectables and skin treatments in Mornington. Specialising in perimenopausal skin. 20+ years clinical nursing experience. Free consultations.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --black: #1a1a1a;
+  --charcoal: #2d2d2d;
+  --cream: #f4f0eb;
+  --warm-white: #faf7f3;
+  --beige: #d8c7b0;
+  --beige-dark: #b59a78;
+  --rose: #c89a8a;
+  --soft-grey: #888;
+  --line: rgba(26,26,26,0.08);
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { font-family:'Inter',sans-serif; color:var(--black); background:var(--warm-white); font-weight:300; line-height:1.7; -webkit-font-smoothing:antialiased; }
+h1,h2,h3,h4 { font-family:'Cormorant Garamond',serif; font-weight:400; line-height:1.15; letter-spacing:-0.01em; }
+h1 { font-size:clamp(2.5rem,5vw,4.5rem); }
+h2 { font-size:clamp(2rem,3.5vw,3rem); }
+h3 { font-size:clamp(1.4rem,2vw,1.8rem); }
+img { max-width:100%; display:block; }
+a { color:inherit; text-decoration:none; }
+.container { max-width:1240px; margin:0 auto; padding:0 2rem; }
+.label { font-family:'Inter',sans-serif; font-size:0.7rem; font-weight:500; letter-spacing:0.25em; text-transform:uppercase; color:var(--beige-dark); margin-bottom:1rem; }
+.btn { display:inline-block; padding:1rem 2.2rem; font-family:'Inter',sans-serif; font-size:0.78rem; font-weight:500; letter-spacing:0.18em; text-transform:uppercase; border:1px solid var(--black); color:var(--black); background:transparent; transition:all 0.3s ease; cursor:pointer; }
+.btn:hover { background:var(--black); color:var(--warm-white); }
+.btn-light { border-color:var(--warm-white); color:var(--warm-white); }
+.btn-light:hover { background:var(--warm-white); color:var(--black); }
+.btn-filled { background:var(--black); color:var(--warm-white); border:1px solid var(--black); }
+.btn-filled:hover { background:var(--charcoal); }
+
+/* NAV */
+.nav { position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(250,247,243,0.92); backdrop-filter:blur(10px); border-bottom:1px solid var(--line); }
+.nav-inner { display:flex; align-items:center; justify-content:space-between; padding:1.2rem 2rem; max-width:1240px; margin:0 auto; }
+.brand { font-family:'Cormorant Garamond',serif; font-size:1.5rem; font-weight:500; letter-spacing:0.04em; }
+.brand span { color:var(--beige-dark); }
+.nav-links { display:flex; gap:2.5rem; font-size:0.78rem; font-weight:400; letter-spacing:0.12em; text-transform:uppercase; }
+.nav-links a:hover { color:var(--beige-dark); }
+.nav-cta { font-size:0.7rem; letter-spacing:0.15em; text-transform:uppercase; padding:0.7rem 1.4rem; border:1px solid var(--black); transition:all 0.3s ease; }
+.nav-cta:hover { background:var(--black); color:var(--warm-white); }
+@media (max-width:768px) { .nav-links { display:none; } }
+
+/* HERO */
+.hero { min-height:100vh; display:grid; grid-template-columns:1fr 1fr; align-items:center; padding-top:80px; }
+.hero-text { padding:4rem 4rem 4rem 6rem; }
+.hero-text h1 { margin:1.2rem 0 1.5rem; }
+.hero-text h1 em { font-style:italic; color:var(--beige-dark); font-weight:300; }
+.hero-text p { font-size:1rem; color:var(--charcoal); max-width:460px; margin-bottom:2.2rem; line-height:1.8; }
+.hero-actions { display:flex; gap:1rem; flex-wrap:wrap; }
+.hero-image { position:relative; height:100vh; overflow:hidden; }
+.hero-image img { width:100%; height:100%; object-fit:cover; }
+.hero-image::after { content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(0,0,0,0) 60%, rgba(0,0,0,0.15)); }
+@media (max-width:900px) {
+  .hero { grid-template-columns:1fr; min-height:auto; }
+  .hero-image { height:50vh; order:-1; }
+  .hero-text { padding:3rem 1.5rem; }
+}
+
+/* TRUSTED STRIP */
+.trusted { background:var(--cream); padding:1.8rem 2rem; text-align:center; }
+.trusted p { font-family:'Cormorant Garamond',serif; font-style:italic; font-size:1.05rem; color:var(--charcoal); font-weight:400; max-width:780px; margin:0 auto; }
+
+/* APPROACH */
+.approach { padding:7rem 0; background:var(--warm-white); }
+.approach-grid { display:grid; grid-template-columns:1fr 1.4fr; gap:5rem; align-items:center; }
+.approach-image img { width:100%; height:560px; object-fit:cover; }
+.approach-text h2 em { font-style:italic; color:var(--beige-dark); font-weight:300; }
+.approach-text p { margin-top:1.5rem; color:var(--charcoal); font-size:0.95rem; }
+.approach-text p + p { margin-top:1rem; }
+.approach-text .btn { margin-top:2.2rem; }
+@media (max-width:900px) { .approach-grid { grid-template-columns:1fr; gap:2.5rem; } .approach-image img { height:380px; } }
+
+/* SERVICES */
+.services { padding:7rem 0; background:var(--cream); }
+.services-head { text-align:center; max-width:680px; margin:0 auto 4rem; }
+.services-head h2 em { font-style:italic; color:var(--beige-dark); font-weight:300; }
+.services-head p { margin-top:1rem; color:var(--charcoal); font-size:0.95rem; }
+.services-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; }
+.service-card { background:var(--warm-white); padding:0; overflow:hidden; transition:transform 0.4s ease; }
+.service-card:hover { transform:translateY(-4px); }
+.service-card .service-img { width:100%; height:280px; object-fit:cover; }
+.service-card-inner { padding:2rem 1.8rem 2.2rem; }
+.service-card h3 { margin-bottom:0.8rem; }
+.service-card p { font-size:0.88rem; color:var(--charcoal); line-height:1.7; margin-bottom:1.2rem; }
+.service-card .from { font-family:'Inter',sans-serif; font-size:0.72rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--beige-dark); font-weight:500; }
+@media (max-width:900px) { .services-grid { grid-template-columns:1fr; } .service-card .service-img { height:240px; } }
+
+/* PERIMENOPAUSE FEATURE */
+.peri { padding:8rem 0; background:var(--charcoal); color:var(--cream); }
+.peri-inner { display:grid; grid-template-columns:1.3fr 1fr; gap:5rem; align-items:center; }
+.peri h2 { color:var(--warm-white); }
+.peri h2 em { color:var(--beige); font-style:italic; font-weight:300; }
+.peri .label { color:var(--beige); }
+.peri p { color:rgba(244,240,235,0.85); margin-top:1.5rem; font-size:1rem; }
+.peri-quote { font-family:'Cormorant Garamond',serif; font-style:italic; font-size:1.6rem; color:var(--beige); line-height:1.4; margin-top:2.5rem; padding-left:1.5rem; border-left:2px solid var(--beige-dark); }
+.peri-quote cite { display:block; font-family:'Inter',sans-serif; font-style:normal; font-size:0.7rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--beige); margin-top:1rem; font-weight:400; }
+.peri-image { position:relative; }
+.peri-image img { width:100%; height:520px; object-fit:cover; }
+@media (max-width:900px) { .peri-inner { grid-template-columns:1fr; gap:3rem; } .peri-image img { height:380px; } }
+
+/* INSTAGRAM GRID */
+.ig { padding:7rem 0; background:var(--warm-white); }
+.ig-head { text-align:center; margin-bottom:3rem; }
+.ig-head h2 em { font-style:italic; color:var(--beige-dark); font-weight:300; }
+.ig-head a { display:inline-block; margin-top:0.8rem; font-size:0.78rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--beige-dark); border-bottom:1px solid var(--beige-dark); padding-bottom:2px; }
+.ig-head a:hover { color:var(--black); border-color:var(--black); }
+.ig-grid { display:grid; grid-template-columns:repeat(6,1fr); gap:6px; }
+.ig-grid img { width:100%; aspect-ratio:1; object-fit:cover; transition:opacity 0.3s ease; cursor:pointer; }
+.ig-grid img:hover { opacity:0.78; }
+@media (max-width:900px) { .ig-grid { grid-template-columns:repeat(3,1fr); } }
+
+/* REVIEWS */
+.reviews { padding:7rem 0; background:var(--cream); }
+.reviews-head { text-align:center; margin-bottom:4rem; }
+.reviews-head .label { color:var(--beige-dark); }
+.reviews-head h2 em { font-style:italic; color:var(--beige-dark); font-weight:300; }
+.stars { color:var(--beige-dark); font-size:1.4rem; letter-spacing:0.12em; margin:1rem 0 0.3rem; }
+.reviews-head p { color:var(--charcoal); font-size:0.85rem; }
+.reviews-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; }
+.review { background:var(--warm-white); padding:2.2rem 2rem; }
+.review .stars { font-size:1rem; margin:0 0 1.2rem; }
+.review p { font-family:'Cormorant Garamond',serif; font-style:italic; font-size:1.1rem; line-height:1.5; color:var(--charcoal); margin-bottom:1.5rem; }
+.review cite { font-family:'Inter',sans-serif; font-size:0.72rem; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; color:var(--beige-dark); font-style:normal; }
+@media (max-width:900px) { .reviews-grid { grid-template-columns:1fr; } }
+
+/* CTA */
+.cta { padding:8rem 0; background:var(--black); color:var(--cream); text-align:center; }
+.cta h2 em { font-style:italic; color:var(--beige); font-weight:300; }
+.cta p { max-width:520px; margin:1.5rem auto 2.5rem; color:rgba(244,240,235,0.8); }
+.cta-grid { display:grid; grid-template-columns:1fr 1fr; gap:3rem; max-width:760px; margin:3rem auto 0; text-align:left; }
+.cta-grid .label { color:var(--beige); }
+.cta-grid h3 { color:var(--warm-white); margin-bottom:0.5rem; }
+.cta-grid p { color:rgba(244,240,235,0.7); font-size:0.88rem; margin:0; }
+@media (max-width:900px) { .cta-grid { grid-template-columns:1fr; gap:2rem; max-width:400px; } }
+
+/* FOOTER */
+.footer { background:var(--charcoal); color:var(--beige); padding:3rem 0 2rem; text-align:center; font-size:0.78rem; letter-spacing:0.05em; }
+.footer .brand-foot { font-family:'Cormorant Garamond',serif; font-size:1.5rem; color:var(--warm-white); margin-bottom:0.8rem; }
+.footer-meta { color:rgba(216,199,176,0.6); font-size:0.7rem; letter-spacing:0.1em; margin-top:1.5rem; }
+.footer-meta a { color:var(--beige); }
+
+/* Mockup banner */
+.mockup-banner { position:fixed; top:0; left:0; right:0; background:var(--beige-dark); color:var(--warm-white); text-align:center; padding:0.5rem 1rem; font-family:'Inter',sans-serif; font-size:0.7rem; letter-spacing:0.15em; text-transform:uppercase; z-index:200; }
+.mockup-banner + .nav { top:32px; }
+.mockup-banner + .nav + .hero { padding-top:120px; }
+</style>
+</head>
+<body>
+
+<div class="mockup-banner">Mockup &middot; Clinic Catalyst &middot; Prepared for Simply Aesthetics JJ</div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#" class="brand">Simply Aesthetics <span>JJ</span></a>
+    <div class="nav-links">
+      <a href="#approach">About</a>
+      <a href="#services">Treatments</a>
+      <a href="#perimenopause">Perimenopause</a>
+      <a href="#reviews">Reviews</a>
+    </div>
+    <a href="#contact" class="nav-cta">Free Consult</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <span class="label">Cosmetic Nurse &middot; Mornington</span>
+    <h1>Subtle, natural <em>results</em><br>from a nurse who's<br><em>been there</em>.</h1>
+    <p>Cosmetic injectables and skin treatments for women who want to look like themselves - just refreshed. Specialising in perimenopausal skin and the changes nobody warns you about.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn btn-filled">Book a Free Consult</a>
+      <a href="#approach" class="btn">Meet Juls</a>
+    </div>
+  </div>
+  <div class="hero-image">
+    <img src="assets/ig/ig-18.jpg" alt="Simply Aesthetics JJ - Mornington">
+  </div>
+</section>
+
+<!-- TRUSTED STRIP -->
+<section class="trusted">
+  <p>"It's so nice to talk to someone who actually understands what's happening to my skin." &mdash; The thing Juls hears the most.</p>
+</section>
+
+<!-- APPROACH -->
+<section class="approach" id="approach">
+  <div class="container">
+    <div class="approach-grid">
+      <div class="approach-image">
+        <img src="assets/ig/ig-15.jpg" alt="Juls - Simply Aesthetics JJ">
+      </div>
+      <div class="approach-text">
+        <span class="label">About Juls</span>
+        <h2>20+ years a nurse.<br>One <em>quiet</em> philosophy.</h2>
+        <p>Juls Johnson is a Registered Nurse with over 20 years of clinical experience - cardiac, paediatrics, and now cosmetic. She brings the kind of medical precision you don't expect from a beauty room.</p>
+        <p>Her work is subtle. Half-mil lips. Soft anti-wrinkle. Skin needling that actually does the work. The kind of treatments where the only person who notices is you - and the women who ask where you've been hiding.</p>
+        <p>And as a 47-year-old woman navigating perimenopause herself, she's the rare practitioner who can talk about changing skin, hormonal shifts, and natural ageing from the inside.</p>
+        <a href="#contact" class="btn">Book Your Consult</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="services-head">
+      <span class="label">Treatments</span>
+      <h2>What we <em>do</em>, slowly and well.</h2>
+      <p>No conveyor belt. No upsells. Just considered treatments matched to where your skin actually is.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <img src="assets/ig/ig-02.jpg" alt="Anti-wrinkle treatment" class="service-img">
+        <div class="service-card-inner">
+          <span class="from">Most Booked</span>
+          <h3>Anti-Wrinkle</h3>
+          <p>Soft, undetectable wrinkle reduction. The "you look well-rested" effect - not the frozen-face effect. We treat conservatively and build slowly.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="assets/ig/ig-04.jpg" alt="Dermal filler" class="service-img">
+        <div class="service-card-inner">
+          <span class="from">Signature</span>
+          <h3>Lip &amp; Volume Restoration</h3>
+          <p>Half-mil lips. Subtle volume. Restoration, not enhancement. For women who've lost their lip line to time, not women who want a different face.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="assets/ig/ig-13.jpg" alt="Skin needling" class="service-img">
+        <div class="service-card-inner">
+          <span class="from">For Perimenopausal Skin</span>
+          <h3>Skin Needling</h3>
+          <p>The treatment that quietly does the most. Stimulates collagen, smooths texture, brightens. Particularly powerful through hormonal skin changes.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="assets/ig/ig-09.jpg" alt="Rejuran" class="service-img">
+        <div class="service-card-inner">
+          <span class="from">Advanced</span>
+          <h3>Rejuran Skin Booster</h3>
+          <p>Salmon DNA polynucleotides for deep skin repair. Newer, more advanced, and built for skin that needs healing from the inside out.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="assets/ig/ig-11.jpg" alt="Hyperhidrosis treatment" class="service-img">
+        <div class="service-card-inner">
+          <span class="from">Medical</span>
+          <h3>Hyperhidrosis (Excess Sweating)</h3>
+          <p>Underarm sweat treatment using anti-wrinkle injections. Months of relief, no side effects to daily life. Discreet, effective, life-changing.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="assets/ig/ig-17.jpg" alt="Hayfever treatment" class="service-img">
+        <div class="service-card-inner">
+          <span class="from">Medical</span>
+          <h3>Hayfever Relief</h3>
+          <p>An off-label use of anti-wrinkle that genuinely works for seasonal allergies. Free consultation to see if you're a candidate.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PERIMENOPAUSE FEATURE -->
+<section class="peri" id="perimenopause">
+  <div class="container">
+    <div class="peri-inner">
+      <div>
+        <span class="label">Specialist Focus</span>
+        <h2>Perimenopause <em>changes everything</em>.<br>Including your skin.</h2>
+        <p>Collagen production drops. Skin gets drier. Pores look bigger. Fine lines deepen. Things you've never noticed start sitting differently. And the women you see at other clinics? They don't always know what to do with it.</p>
+        <p>Juls does. She's living it. And she's built a practice around the women going through it - who are tired of being told to "just drink more water" by a 25-year-old.</p>
+        <div class="peri-quote">"It's so nice to talk to someone who actually gets what I'm going through."
+          <cite>What clients say after their first consult</cite>
+        </div>
+      </div>
+      <div class="peri-image">
+        <img src="assets/ig/ig-12.jpg" alt="Perimenopausal skin care">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INSTAGRAM -->
+<section class="ig">
+  <div class="container">
+    <div class="ig-head">
+      <span class="label">From the Clinic</span>
+      <h2>Latest on <em>Instagram</em></h2>
+      <a href="https://www.instagram.com/simplyaestheticsjj/" target="_blank">@simplyaestheticsjj &rarr;</a>
+    </div>
+    <div class="ig-grid">
+      <img src="assets/ig/ig-02.jpg" alt="">
+      <img src="assets/ig/ig-03.jpg" alt="">
+      <img src="assets/ig/ig-04.jpg" alt="">
+      <img src="assets/ig/ig-05.jpg" alt="">
+      <img src="assets/ig/ig-06.jpg" alt="">
+      <img src="assets/ig/ig-07.jpg" alt="">
+      <img src="assets/ig/ig-08.jpg" alt="">
+      <img src="assets/ig/ig-09.jpg" alt="">
+      <img src="assets/ig/ig-10.jpg" alt="">
+      <img src="assets/ig/ig-11.jpg" alt="">
+      <img src="assets/ig/ig-12.jpg" alt="">
+      <img src="assets/ig/ig-14.jpg" alt="">
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <div class="container">
+    <div class="reviews-head">
+      <span class="label">Google Reviews</span>
+      <h2>What women in Mornington <em>actually say</em>.</h2>
+      <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p>From verified Google reviews</p>
+    </div>
+    <div class="reviews-grid">
+      <div class="review">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>"Juls is incredible. She doesn't push, doesn't oversell, just gives you exactly what you need. The most natural results I've ever had."</p>
+        <cite>&mdash; Verified Client</cite>
+      </div>
+      <div class="review">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>"Finally, a nurse who understands what perimenopause does to your skin. I left feeling heard for the first time in years."</p>
+        <cite>&mdash; Verified Client</cite>
+      </div>
+      <div class="review">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>"The vibe is calm, the room is beautiful, and the results speak for themselves. Everyone keeps asking what I'm doing differently."</p>
+        <cite>&mdash; Verified Client</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="contact">
+  <div class="container">
+    <span class="label" style="color:var(--beige);">Start Here</span>
+    <h2>Free <em>full-face</em> consultations.<br>No pressure, no commitment.</h2>
+    <p>30 minutes with Juls, an honest conversation about your skin, and a treatment plan only if it's right for you.</p>
+    <a href="https://bookings.gettimely.com/simplyaesthetics4/bb/book" target="_blank" class="btn btn-light">Book Your Free Consult</a>
+
+    <div class="cta-grid">
+      <div>
+        <span class="label">Visit</span>
+        <h3>2/17 Main Street</h3>
+        <p>Mornington VIC 3931<br>Tues, Thurs &amp; Fri</p>
+      </div>
+      <div>
+        <span class="label">Get in Touch</span>
+        <h3>0418 489 895</h3>
+        <p>info@simplyaestheticsjj.com</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="brand-foot">Simply Aesthetics <span style="color:var(--beige);">JJ</span></div>
+    <p>Cosmetic injectables &amp; skin treatments &middot; Mornington Peninsula</p>
+    <div class="footer-meta">
+      &copy; 2026 Simply Aesthetics JJ &middot; Juls Johnson RN &middot; <a href="https://www.instagram.com/simplyaestheticsjj/" target="_blank">@simplyaestheticsjj</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
